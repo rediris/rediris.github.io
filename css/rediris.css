@@ -1,0 +1,215 @@
+* {
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background: #151515 url(../img/dark_wood.png) fixed;
+  background-image: -webkit-image-set(
+    url('../img/dark_wood.png') 1x,
+    url('../img/dark_wood_@2X.png') 2x
+    );
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #eaeaea;
+  font: 16px;
+  line-height: 1.5;
+  font-family: 'Exo 2', sans-serif;
+  font-weight:400;
+}
+
+/* General & 'Reset' Stuff */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'VT323', sans-serif;
+  font-weight: 400;
+  color: #b5e853;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+li {
+  line-height: 1.4 ;
+}
+
+/* Header, <header>
+   header   - container
+   h1       - project name
+   h2       - project description
+*/
+
+header {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-bottom: 1px dashed #b5e853;
+  padding: 20px 0;
+  margin: 0 0 40px 0;
+}
+
+header h1 {
+  line-height: 1.5;
+  color: #000;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+  letter-spacing: -1px;
+}
+
+header h2 {
+  color: #666;
+}
+
+#downloads .btn {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+dt {
+  font-style: italic;
+  font-weight: bold;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li:before {
+  content: ">>";
+  font-size: 13px;
+  color: #b5e853;
+  margin-left: -1rem;
+  margin-right: 1rem;
+  line-height: 1;
+}
+
+blockquote {
+  color: #aaa;
+  padding-left: 10px;
+  border-left: 1px dotted #666;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  font-size: 14px;
+  color: #b5e853;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-wrap: normal;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px dashed #b5e853;
+  padding: 5px 10px;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px dashed #b5e853;
+  color: #b5e853;
+}
+
+/* Buttons
+*/
+
+.btn {
+  display: inline-block;
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-top: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.btn:hover {
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
+}
+
+.btn .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 1px 8px 0 0;
+  float: left;
+}
+
+/*.btn-github .icon {
+  opacity: 0.6;
+  background: url("../img/blacktocat.png") 0 0 no-repeat;
+}*/
+
+/* Links
+   a, a:hover, a:visited
+*/
+
+a, a:focus, a:visited, a:active {
+  color: #b5e853;
+  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+}
+
+a:hover {
+  color: #93c631;
+  text-shadow: 0 0 5px rgba(104, 182, 255, 0.9);
+}
+
+/* 3 Different Clearfix Classes, for indecisive dev teams */
+
+.cf:before, .cf:after,.clearfix:before, .clearfix:after,.group:before,.group:after {
+  content:"";
+  display:table;
+}
+
+.cf:after,.clearfix:after,.group:after {
+  clear:both;
+}
+
+.cf,.clearfix,.group {
+  zoom:1;
+}
+
+/* GRADIENTS 
+
+*/
+
+.gradient-1 {
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk5ZTUwMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjYjVlODUzIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiM5OWU1MDAiIHN0b3Atb3BhY2l0eT0iMC41Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiNWU4NTMiIHN0b3Atb3BhY2l0eT0iMC41Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  rgba(153,229,0,0.5) 0%, rgba(181,232,83,0.5) 50%, rgba(153,229,0,0.5) 51%, rgba(181,232,83,0.5) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,229,0,0.5)), color-stop(50%,rgba(181,232,83,0.5)), color-stop(51%,rgba(153,229,0,0.5)), color-stop(100%,rgba(181,232,83,0.5))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(153,229,0,0.5) 0%,rgba(181,232,83,0.5) 50%,rgba(153,229,0,0.5) 51%,rgba(181,232,83,0.5) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(153,229,0,0.5) 0%,rgba(181,232,83,0.5) 50%,rgba(153,229,0,0.5) 51%,rgba(181,232,83,0.5) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(153,229,0,0.5) 0%,rgba(181,232,83,0.5) 50%,rgba(153,229,0,0.5) 51%,rgba(181,232,83,0.5) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(153,229,0,0.5) 0%,rgba(181,232,83,0.5) 50%,rgba(153,229,0,0.5) 51%,rgba(181,232,83,0.5) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8099e500', endColorstr='#80b5e853',GradientType=0 ); /* IE6-8 */
+}

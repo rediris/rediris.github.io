@@ -164,10 +164,10 @@ hr {
   float: left;
 }
 
-/*.btn-github .icon {
+.btn-github .icon {
   opacity: 0.6;
   background: url("../img/blacktocat.png") 0 0 no-repeat;
-}*/
+}
 
 /* Links
    a, a:hover, a:visited

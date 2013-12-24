@@ -81,15 +81,6 @@ ul li {
   list-style: none;
 }
 
-ul li:before {
-  content: ">>";
-  font-size: 13px;
-  color: #b5e853;
-  margin-left: -1rem;
-  margin-right: 1rem;
-  line-height: 1;
-}
-
 blockquote {
   color: #aaa;
   padding-left: 10px;
